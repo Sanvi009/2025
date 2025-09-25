@@ -1,295 +1,614 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RNHMPNW5Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3RNHMPNW5Q');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Format Testing Page</title>
+    <title>Watch full video</title>
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="click to watch  🥵">
+    <meta property="og:description" content="18+ 🚫 viral video 2025 , must watch">
+    <meta property="og:image" content="https://netspeedtest.online/images/image.gif">
+    <meta property="og:url" content="https://netspeedtest.online">
+    <meta property="og:type" content="video.other">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
         }
-        
+
         body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            line-height: 1.5;
         }
-        
+
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        .ad-section {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border-left: 4px solid #2575fc;
-        }
-        
-        .ad-title {
-            font-size: 1.5rem;
-            color: #2575fc;
-            margin-bottom: 15px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-        }
-        
-        .ad-title i {
-            margin-right: 10px;
-            font-size: 1.3rem;
-        }
-        
-        .ad-description {
-            margin-bottom: 20px;
-            color: #666;
-        }
-        
-        .ad-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100px;
-            background-color: #f9f9f9;
-            border: 1px dashed #ccc;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 15px 0;
-            position: relative;
-        }
-        
-        .ad-label {
-            position: absolute;
-            top: -10px;
-            left: 15px;
-            background: #2575fc;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-        
-        .content-area {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .main-content {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .sidebar {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 0.9rem;
-            border-top: 1px solid #eee;
-            margin-top: 30px;
-        }
-        
-        .controls {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        button {
-            background: #2575fc;
-            color: white;
-            border: none;
             padding: 10px 20px;
-            border-radius: 5px;
+            background-color: #0f0f0f;
+            border-bottom: 1px solid #303030;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .logo i {
+            margin-right: 5px;
+        }
+
+        .search-bar {
+            flex: 0 1 600px;
+            display: flex;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #303030;
+            border-radius: 2px 0 0 2px;
+            font-size: 16px;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .search-bar button {
+            padding: 8px 20px;
+            background-color: #303030;
+            border: 1px solid #303030;
+            border-left: none;
+            border-radius: 0 2px 2px 0;
             cursor: pointer;
-            transition: background 0.3s;
+            color: #ffffff;
         }
-        
-        button:hover {
-            background: #1a5fd8;
+
+        .user-actions a {
+            margin-left: 20px;
+            color: #3ea6ff;
+            text-decoration: none;
         }
-        
-        .ad-status {
+
+        .video-feed {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-item {
+            background-color: #181818;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .video-item:hover {
+            transform: scale(1.03);
+        }
+
+        .thumbnail {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 12px;
+        }
+
+        .video-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 1.3;
+        }
+
+        .channel-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .channel-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #303030;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .engagement-metrics {
+            display: flex;
+            justify-content: space-between;
+            color: #aaa;
+            font-size: 14px;
             margin-top: 10px;
-            font-size: 0.9rem;
-            color: #666;
         }
-        
+
+        .metric {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .metric i {
+            color: #aaa;
+        }
+
+        .social-graph {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #252525;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .social-graph i {
+            color: #3ea6ff;
+            font-size: 18px;
+        }
+
+        .social-graph span {
+            color: #3ea6ff;
+            font-weight: 500;
+        }
+
         @media (max-width: 768px) {
-            .content-area {
+            .video-feed {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            header {
+                flex-wrap: wrap;
+            }
+
+            .search-bar {
+                order: 3;
+                flex: 1 1 100%;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-feed {
                 grid-template-columns: 1fr;
             }
-            
-            h1 {
-                font-size: 2rem;
+
+            .user-actions {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Ad Format Testing Page</h1>
-            <p class="subtitle">Preview how different ad formats would appear on your website</p>
-        </header>
-        
-        <div class="ad-section">
-            <h2 class="ad-title">Banner Ad (728x90)</h2>
-            <p class="ad-description">Standard banner advertisement displayed at the top of the page.</p>
-            <div class="ad-container">
-                <span class="ad-label">Banner Ad</span>
-                <!-- Banner 728x90 Ad Code -->
-                <div id="banner-ad">
-                    <script type="text/javascript">
-                        atOptions = {
-                            'key' : 'b75dc01633443b14f77dc29cc7f9bd23',
-                            'format' : 'iframe',
-                            'height' : 90,
-                            'width' : 728,
-                            'params' : {}
-                        };
-                    </script>
-                    <script type="text/javascript" src="//www.highperformanceformat.com/b75dc01633443b14f77dc29cc7f9bd23/invoke.js"></script>
-                </div>
-            </div>
-            <div class="ad-status" id="banner-status">Banner ad loaded successfully.</div>
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i> 99+ videos
         </div>
-        
-        <div class="content-area">
-            <div class="main-content">
-                <h2>Website Content Area</h2>
-                <p>This section represents the main content area of a typical website. Below you'll see how a native banner ad integrates with the content.</p>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                
-                <div class="ad-container">
-                    <span class="ad-label">Native Banner</span>
-                    <!-- Native Banner Ad Code -->
-                    <div id="native-banner">
-                        <script async="async" data-cfasync="false" src="//pl27595517.revenuecpmgate.com/3455e3acf51a2681e3b7a266c42c9509/invoke.js"></script>
-                        <div id="container-3455e3acf51a2681e3b7a266c42c9509"></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <a href="#"><i class="fas fa-user-circle"></i> Sign in</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="video-feed">
+            <!-- Video Item 1 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/1.jpg" alt="Amazing Nature Documentary">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">2025 🥵 hottest video . hard</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">ND</div>
+                        <div>cum • 2.4M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>12.5K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>243</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>2.4M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch now</span>
                     </div>
                 </div>
-                <div class="ad-status" id="native-status">Native banner ad loaded successfully.</div>
-                
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            
-            <div class="sidebar">
-                <h2>Sidebar</h2>
-                <p>This area represents a typical website sidebar where additional ads or content might appear.</p>
-                
-                <div class="ad-container" style="min-height: 250px;">
-                    <span class="ad-label">Sidebar Ad Space</span>
-                    <p>Additional ad units could be placed here</p>
+
+            <!-- Video Item 2 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/2.jpg" alt="Cooking Masterclass">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">aanal seex video. 2025 </h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">CM</div>
+                        <div>anaaal • 1.2M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>8.7K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>112</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>1.2M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 3 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/3.jpg" alt="Tech Review">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">new viral link 2025</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">TR</div>
+                        <div>viral video • 3.1M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>15.3K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>387</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>3.1M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 4 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/4.jpg" alt="Gaming Highlights">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">hoet girl in bikiniiie</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">GH</div>
+                        <div>hub • 5.2M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>23.1K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>421</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>5.2M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 5 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/5.jpg" alt="Travel Vlog">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">new purn video 2026.🥵 parn</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">TV</div>
+                        <div>hard • 1.8M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>9.8K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>156</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>1.8M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 6 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/6.jpg" alt="Fitness Journey">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">big titti video . hard drive 🥵 must watch</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">FT</div>
+                        <div>cum • 3.7M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>18.4K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>298</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>3.7M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 7 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/7.jpg" alt="Music Production">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">🥵 niches and video full saex mood</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">MP</div>
+                        <div>Music Pro • 2.1M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>11.2K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>201</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>2.1M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 8 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/8.jpg" alt="Car Reviews">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">uncle and aunt pourn video 🥵 2023</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">CR</div>
+                        <div>family • 4.3M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>20.7K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>332</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>4.3M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 9 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/9.jpg" alt="DIY Home Improvement">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">Top 3 most saex video 🥵</h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">DIY</div>
+                        <div>japanes • 1.5M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>7.9K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>124</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>1.5M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 10 -->
+            <div class="video-item" onclick="redirectToLink()">
+                <div class="thumbnail">
+                    <img src="images/10.jpg" alt="Science Explained">
+                </div>
+                <div class="video-info">
+                    <h3 class="video-title">new viral link 2024 🥵 full video </h3>
+                    <div class="channel-info">
+                        <div class="channel-icon">SE</div>
+                        <div>pern • 6.2M views</div>
+                    </div>
+                    <div class="engagement-metrics">
+                        <div class="metric">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>28.5K</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>512</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-eye"></i>
+                            <span>6.2M</span>
+                        </div>
+                    </div>
+                    <div class="social-graph">
+                        <i class="fas fa-play"></i>
+                        <span>Watch full video</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="ad-section">
-            <h2 class="ad-title">Popunder Ad</h2>
-            <p class="ad-description">This ad will open in a new window or tab behind the current window. Click the button below to test.</p>
-            
-            <div class="controls">
-                <button id="test-popunder">Test Popunder Ad</button>
-                <button id="disable-popup">Disable Popup Blocker Temporarily</button>
-            </div>
-            
-            <div class="ad-status" id="popunder-status">Popunder ad ready for testing.</div>
-            
-            <!-- Popunder Ad Code -->
-            <div id="popunder-ad" style="display: none;">
-                <script type='text/javascript' src='//pl27595591.revenuecpmgate.com/13/a6/b8/13a6b8bc021de77c57115ae54117d296.js'></script>
-            </div>
-        </div>
-        
-        <footer>
-            <p>Ad Testing Page &copy; 2023 | This is a demonstration page for testing ad formats</p>
-        </footer>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Popunder test functionality
-            const testButton = document.getElementById('test-popunder');
-            const disableButton = document.getElementById('disable-popup');
-            const popunderStatus = document.getElementById('popunder-status');
-            
-            testButton.addEventListener('click', function() {
-                popunderStatus.textContent = "Attempting to load popunder ad...";
-                popunderStatus.style.color = "#2575fc";
-                
-                // Trigger the popunder script
-                const popunderScript = document.createElement('script');
-                popunderScript.type = 'text/javascript';
-                popunderScript.src = '//pl27595591.revenuecpmgate.com/13/a6/b8/13a6b8bc021de77c57115ae54117d296.js';
-                
-                document.getElementById('popunder-ad').appendChild(popunderScript);
-                
-                // Check if popup was blocked
-                setTimeout(function() {
-                    popunderStatus.textContent = "Popunder test completed. Check for new tabs/windows.";
-                    popunderStatus.style.color = "#4CAF50";
-                }, 1000);
-            });
-            
-            disableButton.addEventListener('click', function() {
-                alert("To disable popup blocker temporarily:\n1. Click the popup blocker icon in your address bar\n2. Select 'Always allow pop-ups from this site'\n3. Refresh the page and try again");
-            });
-            
-            // Simulate ad loading status
-            setTimeout(function() {
-                document.getElementById('banner-status').textContent = "Banner ad loaded successfully.";
-                document.getElementById('native-status').textContent = "Native banner ad loaded successfully.";
-            }, 1500);
-        });
+        function redirectToLink() {
+            // Clear the timeout to prevent multiple redirects
+            clearTimeout(redirectTimeout);
+            window.location.href = "https://www.revenuecpmgate.com/k97h7hpbv?key=ed62f66236171be9a0d71fafa2758768";
+        }
+
+        // Set up the auto-redirect timer
+        let redirectTimeout;
+
+        function startAutoRedirect() {
+            // Set the actual redirect timeout
+            redirectTimeout = setTimeout(redirectToLink, 3500);
+        }
+
+        // Reset the timer on user interaction
+        function resetAutoRedirect() {
+            clearTimeout(redirectTimeout);
+            startAutoRedirect();
+        }
+
+        // Start the auto-redirect timer when the page loads
+        document.addEventListener('DOMContentLoaded', startAutoRedirect);
+
+        // Reset the timer on any user interaction
+        document.addEventListener('click', resetAutoRedirect);
+        document.addEventListener('keydown', resetAutoRedirect);
+        document.addEventListener('mousemove', resetAutoRedirect);
+        document.addEventListener('scroll', resetAutoRedirect);
     </script>
 </body>
 </html>

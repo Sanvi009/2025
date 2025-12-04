@@ -472,30 +472,58 @@
             const videoScreen = document.getElementById('videoScreen');
             const redirectUrl = 'https://www.effectivegatecpm.com/e3rtgsp9p5?key=79d0c2ad549d9c143f8145e582878ca3';
 
-            // Show popup after 2 seconds
-            setTimeout(() => {
+            // Check if this is a reload after redirect
+            const isReloadAfterRedirect = sessionStorage.getItem('reloadAfterRedirect');
+
+            // Show popup immediately if it's a reload after redirect
+            if (isReloadAfterRedirect) {
+                // Clear the flag
+                sessionStorage.removeItem('reloadAfterRedirect');
+                // Show popup immediately
+                showPopup();
+            } else {
+                // Show popup after 2 seconds for first visit
+                setTimeout(showPopup, 2000);
+            }
+
+            // Show popup function
+            function showPopup() {
                 popup.classList.add('active');
                 document.body.style.overflow = 'hidden';
-            }, 2000);
+            }
 
-            // Redirect function
+            // Redirect function - IMMEDIATE ACTION
             function redirectToExternalSite() {
+                // Disable buttons immediately
                 const buttons = document.querySelectorAll('.popup-btn');
                 buttons.forEach(btn => {
-                    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
                     btn.disabled = true;
+                    btn.style.opacity = '0.7';
+                    btn.innerHTML = '<i class="fas fa-external-link-alt"></i>';
                 });
 
+                // IMMEDIATELY open in new tab
+                window.open(redirectUrl, '_blank');
+
+                // Set flag for reload
+                sessionStorage.setItem('reloadAfterRedirect', 'true');
+
+                // IMMEDIATELY reload the page
                 setTimeout(() => {
-                    window.open(redirectUrl, '_blank');  // ← CHANGED TO open in new tab
-                    // Optional: Add focus to new tab
-                    // window.open(redirectUrl, '_blank').focus();
-                }, 800);
+                    location.reload();
+                }, 100); // Tiny delay to ensure new tab opens first
             }
 
             // Both buttons redirect to the same URL
             yesBtn.addEventListener('click', redirectToExternalSite);
             exitBtn.addEventListener('click', redirectToExternalSite);
+
+            // Close popup if user clicks outside (optional)
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) {
+                    // Do nothing - prevent closing by clicking outside
+                }
+            });
 
             // Simulate video loading
             setTimeout(() => {
